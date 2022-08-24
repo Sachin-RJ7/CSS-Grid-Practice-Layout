@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
-
+                            /* Task 1 : */
 .header, .main, .footer {
     border: 1px solid red;
 }
-
-                        /* Task 1 : */
+                       
 .task1-container {
    display: grid;
    height: 100vh;
    grid-template-rows: auto 1fr auto;
 }
+
