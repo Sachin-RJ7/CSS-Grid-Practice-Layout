@@ -47,4 +47,49 @@ body {
  }
 
 
- 
+                                /* Task 3 : */
+
+.task3-container {
+    display: grid;
+    height: 100vh;
+
+    grid-template-rows:auto auto 1fr auto auto auto;
+    gap: 24px;
+}
+
+.item{
+    border: 1px solid red;
+}
+
+@media (min-width: 720px) {
+    .task3-container{
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows:auto auto 1fr auto ;
+    }
+
+    .task3-container .header{
+        grid-column: 1 / span 12;
+    }
+
+    .task3-container .navigation{
+        grid-column: 1 / span 12;
+    }
+    
+    .task3-container .main{
+        grid-column: 3 / span 10;
+    }
+
+    .task3-container .sidebar{
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    .task3-container .ads{
+        grid-column: 1 / span 2;
+    }
+
+    .task3-container .footer{
+        grid-column: 3 / span 10;
+    }
+}
+
